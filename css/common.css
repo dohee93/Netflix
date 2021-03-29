@@ -1,16 +1,6 @@
 /* Font Style */
 
 @font-face { 
-   font-family: 'Nike TG'; 
-   src: url(../font/257c802f-349c-4b4d-aefa-546d5de15ec6.woff2) format('woff2');
-}
-
-@font-face { 
-   font-family: 'Nike Futura'; 
-   src: url(../font/nike-futura.woff2) format('woff2');
-}
-
-@font-face { 
    font-family: 'Noto Sans KR'; 
    src: url(../font/NotoSans-Thin.woff2) format('woff2');
    font-weight: 100;
@@ -46,12 +36,18 @@
 }
 
 
-
-body { 
-   font-family: 'Noto Sans KR'; 
-   font-size: 16px; 
-   line-height: 1.5; 
-   font-weight: 400; 
-   letter-spacing: normal; 
-   color: #111;
+body, html {
+   font-family: 'Noto Sans KR', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   color: rgb(255,255,255);
+   background-color: rgb(0,0,0);
+   font-size: 16px;
+   direction: ltr;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+   font-size: 4rem;
+}
+h2 {
+   font-size: 1.625rem;
 }
