@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form action="member.php">
+      <fieldset>
+         <legend>개인정보</legend>
+         <h3>성별</h3>
+         <input type="radio" name="man" value="man" id="man_r"><label for="man_r">남자</label>
+         <input type="radio" name="woman" value="woman" id="woman_r"><label for="woman_r">여자</label>
+         <input type="submit" value="제출">
+      </fieldset>
+      <div>
+         <select name="language" size="1" multiple>
+            <option value="korean">한국어</option>
+            <option value="english" selected>영어</option>
+            <option value="chinese">중국어</option>
+         </select>
+      </div>
+
+      <textarea name="memo" id="" cols="30" rows="10">메모</textarea>
+
+      <button type="button" onclick="alert(데이터)">Click</button>
+
+      <input list="browsers">
+      <datalist id="browsers">
+         <option>서교동</option>
+         <option>합정동</option>
+         <option>연남동</option>
+         <option>연희동</option>
+         <option>신사동</option>
+         <option>압구정동</option>
+      </datalist>
+
+   </form>
+   
+
+</body>
+</html>
