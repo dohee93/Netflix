@@ -1,3 +1,4 @@
+/* Hero Section */
 .hero {
    width: 100%;
    height: 100vh;
@@ -49,8 +50,6 @@
    font-weight: 400;
 }
 .hero-detail {
-   /* padding-top: 0.85rem; */
-   /* padding-bottom: 20px; */
    font-size: 1rem;
    font-weight: 400;
 }
@@ -101,7 +100,7 @@
    animation: fade_in 2s;
 }
 
-
+/* Story Card Section */
 .story-card {
    position: relative;
    border-bottom: 8px solid #222;
@@ -132,11 +131,9 @@
 .story-card-img {
    width: 48%;
    height: 100%;
-   /* margin: -10% -5% -5% 0;
    display: flex;
-   flex: 0 1 auto; */
+   flex: 0 1 auto; 
    position: relative;
-
 }
 .story-card-img img {
    position: relative;
@@ -221,4 +218,66 @@
    content: '';
    position: absolute;
    right: .75em;
+}
+
+/* FAQ Section */
+svg {
+   width: 24px;
+   height: 24px;
+   fill: rgb(255,255,255);
+}
+
+.faq {
+   padding: 70px 45px;
+   border-bottom: 8px solid #222;
+}
+
+.faq .faq-title {
+   font-size: 50px;
+   font-weight: 700;
+   margin-bottom: 8px;
+   text-align: center;
+}
+
+.faq .faq-list {
+   max-width: 815px;
+   margin: 52px auto;
+}
+
+.faq .faq-list li {
+   margin-bottom: 8px;
+   overflow: hidden;
+   max-height: 69px;
+   transition: all 1s;
+}
+
+.faq .faq-list li div:first-child {
+   display: block;
+   text-align: left;
+   background-color: rgb(48,48,48);
+   padding: 20px 30px;
+   margin-bottom: 1px;
+   width: 100%;
+   position: relative;
+}
+
+.faq .faq-list li div:nth-child(2) {
+   display: block;
+   background-color: rgb(48,48,48);
+   padding: 32px;
+}
+
+.faq .faq-list li div svg {
+   float: right;
+   transform: translateY(-100%) rotate(45deg);
+   transition: all 0.6s;
+}
+
+.email-form-title {
+   text-align: center;
+   padding-bottom: 20px;
+   font-size: 1.2rem;
+   padding: 0 5%;
+   margin: auto;
+   font-weight: 400;
 }
