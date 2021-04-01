@@ -119,6 +119,9 @@
    height: 100%;
    padding: 0 3rem 0 0;
 }
+.story-card-text:nth-child(2) {
+   padding: 0 0 0 3rem;
+}
 .story-card-title {
    font-size: 3.125rem;
    margin-bottom: .5rem;
