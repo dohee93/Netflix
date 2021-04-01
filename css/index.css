@@ -254,7 +254,7 @@ svg {
    transition: all 1s;
 }
 
-.faq .faq-list li div:first-child {
+.faq .faq-list li .faq-item {
    display: block;
    text-align: left;
    background-color: rgb(48,48,48);
@@ -264,13 +264,13 @@ svg {
    position: relative;
 }
 
-.faq .faq-list li div:nth-child(2) {
+.faq .faq-list li .faq-answer {
    display: block;
    background-color: rgb(48,48,48);
    padding: 32px;
 }
 
-.faq .faq-list li div svg {
+.faq .faq-list li .faq-item svg {
    float: right;
    transform: translateY(-100%) rotate(45deg);
    transition: all 0.6s;
