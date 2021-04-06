@@ -8,7 +8,7 @@
    background-repeat: no-repeat;
 }
 #hero .hero-wrap {
-   background-color: rgba(0,0,0,0.5);
+   background-color: rgba(0, 0, 0, 0.5);
    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
    position: absolute;
    top: 0;
@@ -57,6 +57,9 @@
    font-size: 1rem;
    font-weight: 400;
    margin: .25em 0;
+}
+.show {
+   display: none;
 }
 .hero-input {
    display: block;
@@ -253,6 +256,9 @@ svg {
    max-height: 69px;
    transition: all 1s;
 }
+.faq .faq-list li.clicked {
+   max-height: 500px;
+}
 
 .faq .faq-list li .faq-item {
    display: block;
@@ -275,7 +281,9 @@ svg {
    transform: translateY(-100%) rotate(45deg);
    transition: all 0.6s;
 }
-
+.faq .faq-list li.clicked .faq-item svg {
+   transform: translateY(-100%) rotate(90deg);
+}
 .email-form-title {
    text-align: center;
    padding-bottom: 20px;
@@ -321,6 +329,7 @@ svg {
    width: calc(25% - 12px);
    padding-right: 12px;
    min-width: 100px;
+   vertical-align: top;
 }
 .footer-link {
    font-size: 13px;
@@ -336,12 +345,12 @@ svg {
    margin-top: 20px;
 }
 .ui-select {
-   padding: 5px 16px 5px 26px;
-   line-height: 1.7;
+   padding: 1px 5px 1px 15px;
+   line-height: 1.5;
    background-color: #000;
    border: 1px solid #333;
    color: #999;
-   font-size: 1rem;
+   font-size: 0.9rem;
 }
 .footer-country {
    font-size: 13px;
@@ -354,3 +363,200 @@ svg {
    line-height: 1.2rem;
 }
 
+
+/* @media only screen and (min-width: 1450px) {
+
+}
+@media only screen and (min-width: 950px) and (max-width: 1449px) {
+
+} */
+@media only screen and (max-width: 949px) {
+   
+   .login-wrap {
+      display: unset;
+   }
+   .hero-input {
+      height: 45px;
+      border-radius: 4px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+   .hero-submit {
+      height: 45px;
+      border-radius: 4px;
+      margin: 10px 0;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+   .story-card-container {
+      flex-direction: column;
+   }
+   #card-02 .story-card-container {
+      flex-direction: column-reverse;
+   }
+   .story-card-text {
+      text-align: center;
+      display: block;
+      padding: 0;
+      width: 100%;
+      z-index: 3;
+   }   
+   .story-card-img {
+      width: 100%;
+      max-width: 600px;
+   }
+   #card-02 .story-card-title {
+      margin-top: 30px;
+   }
+   .story-card-text:nth-child(2) {
+      padding: 0 0 0 0;
+   }
+   #card-01 .story-card-title,
+   #card-03 .story-card-title {
+      margin-top: 3.75rem;
+   }
+   #card-03 .story-card-img {
+      margin-top: 5%;
+   }
+   .email-form-title {
+      margin: 1rem 0;
+   }
+   .faq {
+      padding: 70px 20px;
+   }
+   .footer {
+      width: 100%;
+      margin: 0;
+   }
+   .footer-link-item {
+      width: calc(33.33% - 12px);
+      padding-right: 12px;
+   }
+
+
+
+}
+
+
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+   #hero .hero-wrap {
+      padding-top: 200px;
+   }
+   .gnb {
+      padding: 0 45px;
+   }
+   .gnb-logo {
+      width: 6.75rem;
+      height: 2rem;
+   }
+   .story-card-title {
+      font-size: 2.5rem;
+   }
+   .story-card-subtitle {
+      font-size: 1.25rem;
+   }
+}
+@media only screen and (max-height: 500px) {
+   .hero {
+      width: 100%;
+      height: 200vh;
+   }
+   #hero .hero-wrap {
+      width: 100%;
+      height: 200vh;
+   }
+}
+
+
+@media only screen and (max-width: 549px) {
+   #hero .hero-wrap {
+      padding-top: 150px;
+   }
+   .hero {
+      width: 100%;
+      height: 78vh;
+   }
+   #hero .hero-wrap {
+      width: 100%;
+      height: 78vh;
+   }
+   .gnb {
+      padding: 0 5%;
+   }
+   .gnb-logo {
+      width: auto;
+      height: 1.5rem;
+   }
+   .hide {
+      display: none;
+   }
+   .show {
+      display: block;
+   }
+   
+   .story-card {
+      padding: 50px 5%;
+   }
+   .story-card-title {
+      font-size: 1.625rem;
+   }
+   .story-card-subtitle {
+      font-size: 1.125rem;
+   }
+   .hero-detail {
+      font-size: 0.8rem;
+   }
+   .hero-desc {
+      font-size: 0.8rem;
+   }
+   .faq {
+      padding: 70px 10px;
+   }
+   .faq .faq-title {
+      font-size: 1.625rem;
+   }
+   .faq .faq-list {
+      max-width: 815px;
+      margin: 1.25em auto;
+   }
+   .faq .faq-list li .faq-item h3 {
+      font-size: 1rem;
+      line-height: 2rem;
+      vertical-align: bottom;
+   }
+   .faq .faq-list li .faq-item {
+      padding: 20px 15px;
+   }
+   svg {
+      width: 18px;
+      height: 18px;
+   }
+   .email-form-title {
+      font-size: 16px;
+   }
+   .footer-card {
+      padding: 50px 5%;
+   }
+
+   
+
+}
+@media only screen and (max-width: 500px) {
+   #hero .hero-wrap {
+      padding-top: 150px;
+   }
+   .footer-link-item {
+      width: 40%;
+      padding-right: 0;
+   }
+   .footer-link-item:nth-child(2n) {
+      margin-left: 2rem;
+   }
+   .hero-input {
+      width: 350px;
+   }
+
+}
+@media only screen and (max-width: 500px) {
