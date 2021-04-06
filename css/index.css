@@ -539,7 +539,20 @@ svg {
    .footer-card {
       padding: 50px 5%;
    }
+   .card-animation {
+      padding: .25em .65em;
 
+      bottom: -10%;
+   }
+   .card-animation-img img {
+      height: 3em;
+   }
+   .text-0 {
+      font-size: 0.9em;
+   }
+   .text-1 {
+      font-size: .75em;
+   }
    
 
 }
