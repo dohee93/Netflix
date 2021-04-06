@@ -509,7 +509,7 @@ svg {
       margin: 1.25em auto;
    }
    .faq .faq-list li .faq-item h3 {
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 2rem;
       vertical-align: bottom;
    }
@@ -544,6 +544,29 @@ svg {
       padding: 5px 12px;
       font-size: 0.9rem;
    }
+   .animation {
+      /* width: 100%;
+      height: 100%;
+      max-width: 73%;
+      max-height: 54%;
+   
+      position: absolute;
+      top: 48%;
+      left: 50%; */
+      transform: translate(-50%, 0);
+   }
+
+   .animation_2 {
+      /* width: 100%;
+      height: 100%;
+      max-width: 63%;
+      max-height: 47%;
+   
+      position: absolute;
+      top: 34%;
+      left: 50%; */
+      transform: translate(-50%, 0);
+   }
    
 
 }
@@ -561,5 +584,6 @@ svg {
    .hero-input {
       width: 350px;
    }
+
 
 }
