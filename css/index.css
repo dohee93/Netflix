@@ -579,7 +579,7 @@ svg {
    .animation {
       transform: translate(-50%, -90%);
    }
-   .animation_2 {
+   /* .animation_2 {
       transform: translate(-50%, 100%);
-   }
+   } */
 }
