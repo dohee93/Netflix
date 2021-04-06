@@ -553,7 +553,7 @@ svg {
       position: absolute;
       top: 48%;
       left: 50%; */
-      transform: translate(-50%, 0);
+      transform: translate(-50%, -100%);
    }
 
    .animation_2 {
@@ -565,7 +565,7 @@ svg {
       position: absolute;
       top: 34%;
       left: 50%; */
-      transform: translate(-50%, 0);
+      transform: translate(-50%, -100%);
    }
    
 
