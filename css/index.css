@@ -72,6 +72,10 @@
    font-size: 1rem;
    color: rgb(0,0,0);
 }
+.hero-input:focus {
+   outline: 0;
+}
+
 .hero-submit {
    display: block;
    background-color: rgb(229,9,20);
@@ -358,6 +362,10 @@ svg {
    -moz-appearance: none;
    -webkit-appearance: none;
 }
+.ui-select:focus {
+   outline: 0;
+}
+
 .footer-country {
    font-size: 13px;
    margin-top: 24px;
