@@ -353,6 +353,10 @@ svg {
    border: 1px solid #333;
    color: #999;
    font-size: 0.9rem;
+
+   appearance: none;
+   -moz-appearance: none;
+   -webkit-appearance: none;
 }
 .footer-country {
    font-size: 13px;
@@ -574,7 +578,7 @@ svg {
    }
 
 }
-
+/* 
 @media only screen and (max-width: 375px) {
    .animation {
       transform: translate(-50%, -90%);
@@ -582,4 +586,4 @@ svg {
    .animation_2 {
       transform: translate(-50%, -90%);
    }
-}
+} */
