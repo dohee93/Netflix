@@ -45,6 +45,7 @@
    font-size: 1rem;
    font-weight: 400;
 }
+
 .hero-subtitle {
    margin: 1rem auto;
    font-weight: 400;
@@ -91,7 +92,7 @@
    margin: 2.5rem 0;
 }
 
-@keyframes fade_in {
+@keyframes fadeIn {
    0% {
       opacity: 0;
    }
@@ -104,7 +105,7 @@
 }
 
 .effect-fade-in {
-   animation: fade_in 2s;
+   animation: fadeIn 2s;
 }
 
 /* Story Card Section */
@@ -113,6 +114,7 @@
    border-bottom: 8px solid #222;
    padding: 70px 45px;
 }
+
 .story-card-container {
    max-width: 1100px;
    min-height: 100px;
@@ -126,18 +128,52 @@
    width: 52%;
    height: 100%;
    padding: 0 3rem 0 0;
+   opacity: 0;
 }
+.story-card-text.move {
+   animation: moveInLeft 3s forwards;
+}
+@keyframes moveInLeft {
+   0% {
+      transform: translateX(-50%);
+      opacity: 0;
+   }
+   100% {
+      transform: translateX(0);
+      opacity: 1;
+   }
+}
+@keyframes moveInRight {
+   0% {
+      transform: translateX(50%);
+      opacity: 0;
+   }
+   100% {
+      transform: translateX(0);
+      opacity: 1;
+   }
+}
+.story-card-text:nth-child(2).move {
+   animation: moveInRight 3s forwards;
+}
+
 .story-card-text:nth-child(2) {
    padding: 0 0 0 3rem;
 }
 .story-card-title {
-   font-size: 3.125rem;
+   font-size: 2rem;
    margin-bottom: .5rem;
+   color: rgb(156, 156, 156);
+}
+.red {
+   color: #fff;
+   font-size: 3.75rem;
 }
 .story-card-subtitle {
-   font-size: 1.625rem;
+   font-size: 1.6rem;
    font-weight: 400;
    margin: .75em 0 .25em;
+   color: rgb(116, 116, 116);
 }
 .story-card-img {
    width: 48%;
@@ -145,6 +181,10 @@
    display: flex;
    flex: 0 1 auto; 
    position: relative;
+   opacity: 0;
+}
+.story-card-img.show {
+   animation : fadeIn 3s forwards .4s;
 }
 .story-card-img img {
    z-index: 2;
@@ -155,16 +195,8 @@
    width: 73%;
    height: 54%;
    margin: 16% 12% 12% 13%;;
-   /* max-width: 73%;
-   max-height: 54%; */
    position: absolute;
    z-index: 0;
-   /* top: 83px;
-   left: 69px; */
-   /* position: absolute;
-   top: 48%;
-   left: 50%;
-   transform: translate(-50%, -50%); */
 }
 .story-card-video {
    width: 100%;
@@ -176,24 +208,9 @@
    width: 63%;
    height: 47%;
    margin: 8% 25% 12% 19%;
-   /* max-width: 63%;
-   max-height: 47%; */
    position: absolute;
    z-index: 0;
-   /* top: 60px;
-   left: 90px; */
-
-/* 
-   position: absolute;
-   top: 34%;
-   left: 50%;
-   transform: translate(-50%, -50%); */
 }
-.animation_2 video {
-   width: 100%;
-   height: 100%;
-}
-
 .card-animation {
    padding: .5em .75em;
    position: absolute;
@@ -256,6 +273,7 @@ svg {
 .faq {
    padding: 70px 45px;
    border-bottom: 8px solid #222;
+   background-color: #222222;
 }
 
 .faq .faq-title {
@@ -283,7 +301,7 @@ svg {
 .faq .faq-list li .faq-item {
    display: block;
    text-align: left;
-   background-color: rgb(48,48,48);
+   background-color: rgb(97, 97, 97);
    padding: 20px 30px;
    margin-bottom: 1px;
    width: 100%;
@@ -293,7 +311,7 @@ svg {
 
 .faq .faq-list li .faq-answer {
    display: block;
-   background-color: rgb(48,48,48);
+   background-color:  rgb(97, 97, 97);
    padding: 32px;
 }
 
@@ -360,16 +378,18 @@ svg {
 }
 
 .select-arrow {
-   position: relative;
-   display: inline-block;
-   width: 100%;
+   /* width: %; */
    margin-top: 20px;
+   border: 0.8px solid #333;
+   display: inline-flex;
+   justify-content: flex-start;
+   align-items: center;
 }
 .ui-select {
    padding: 1px 5px 1px 15px;
    line-height: 1.5;
    background-color: #000;
-   border: 1px solid #333;
+   border: 1px solid transparent;
    color: #999;
    font-size: 0.9rem;
 
@@ -590,14 +610,6 @@ svg {
    .faq .faq-list li.clicked .faq-item svg {
       transform: translateY(-120%) rotate(90deg);
    }
-   .animation {
-      margin: -1rem;
-   }
-   .animation_2 {
-      margin: -1rem;
-
-   }
-
 }
 @media only screen and (max-width: 500px) {
    #hero .hero-wrap {
@@ -613,34 +625,4 @@ svg {
    .hero-input {
       width: 350px;
    }
-   .animation {
-      top: 70px;
-      left: 60px;
-   }
-   .animation_2 {
-      top: 50px;
-      left: 80px;
-   }
-
 }
-/* @media only screen and (max-width: 449px) {
-   .animation {
-      top: 60px;
-      left: 50px;
-   }
-   .animation_2 {
-      top: 50px;
-      left: 70px;
-   }
-}
-
-@media only screen and (max-width: 375px) {
-   .animation {
-      top: 50px;
-      left: 40px;
-   }
-   .animation_2 {
-      top: 30px;
-      left: 60px;
-   }
-} */
