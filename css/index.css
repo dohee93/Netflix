@@ -156,11 +156,14 @@
    height: 100%;
    max-width: 73%;
    max-height: 54%;
-
    position: absolute;
+   z-index: 0;
+   top: 83px;
+   left: 69px;
+   /* position: absolute;
    top: 48%;
    left: 50%;
-   transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%); */
 }
 .story-card-video {
    width: 100%;
@@ -173,11 +176,16 @@
    height: 100%;
    max-width: 63%;
    max-height: 47%;
+   position: absolute;
+   z-index: 0;
+   top: 60px;
+   left: 90px;
 
+/* 
    position: absolute;
    top: 34%;
    left: 50%;
-   transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%); */
 }
 .card-animation {
    padding: .5em .75em;
@@ -469,6 +477,14 @@ svg {
    .story-card-subtitle {
       font-size: 1.25rem;
    }
+   .animation {
+      top: 87px;
+      left: 79px;
+   }
+   .animation_2 {
+      top: 60px;
+      left: 100px;
+   }
 }
 
 
@@ -567,7 +583,14 @@ svg {
    .faq .faq-list li.clicked .faq-item svg {
       transform: translateY(-120%) rotate(90deg);
    }
-   
+   .animation {
+      top: 70px;
+      left: 60px;
+   }
+   .animation_2 {
+      top: 50px;
+      left: 80px;
+   }
 
 }
 @media only screen and (max-width: 500px) {
@@ -584,14 +607,34 @@ svg {
    .hero-input {
       width: 350px;
    }
-
-}
-/* 
-@media only screen and (max-width: 375px) {
    .animation {
-      transform: translate(-50%, -90%);
+      top: 70px;
+      left: 60px;
    }
    .animation_2 {
-      transform: translate(-50%, -90%);
+      top: 50px;
+      left: 80px;
    }
-} */
+
+}
+@media only screen and (max-width: 449px) {
+   .animation {
+      top: 60px;
+      left: 50px;
+   }
+   .animation_2 {
+      top: 50px;
+      left: 70px;
+   }
+}
+
+@media only screen and (max-width: 375px) {
+   .animation {
+      top: 50px;
+      left: 40px;
+   }
+   .animation_2 {
+      top: 30px;
+      left: 60px;
+   }
+}
