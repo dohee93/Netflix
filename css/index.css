@@ -152,14 +152,15 @@
    height: 100%;
 }
 .animation {
-   width: 100%;
-   height: 100%;
-   max-width: 73%;
-   max-height: 54%;
+   width: 73%;
+   height: 54%;
+   margin: 16% 12% 12% 13%;;
+   /* max-width: 73%;
+   max-height: 54%; */
    position: absolute;
    z-index: 0;
-   top: 83px;
-   left: 69px;
+   /* top: 83px;
+   left: 69px; */
    /* position: absolute;
    top: 48%;
    left: 50%;
@@ -172,14 +173,15 @@
    vertical-align: baseline;
 }
 .animation_2 {
-   width: 100%;
-   height: 100%;
-   max-width: 63%;
-   max-height: 47%;
+   width: 63%;
+   height: 47%;
+   margin: 8% 25% 12% 19%;
+   /* max-width: 63%;
+   max-height: 47%; */
    position: absolute;
    z-index: 0;
-   top: 60px;
-   left: 90px;
+   /* top: 60px;
+   left: 90px; */
 
 /* 
    position: absolute;
@@ -187,6 +189,11 @@
    left: 50%;
    transform: translate(-50%, -50%); */
 }
+.animation_2 video {
+   width: 100%;
+   height: 100%;
+}
+
 .card-animation {
    padding: .5em .75em;
    position: absolute;
@@ -477,14 +484,14 @@ svg {
    .story-card-subtitle {
       font-size: 1.25rem;
    }
-   .animation {
+   /* .animation {
       top: 87px;
       left: 79px;
    }
    .animation_2 {
       top: 60px;
       left: 100px;
-   }
+   } */
 }
 
 
@@ -584,12 +591,11 @@ svg {
       transform: translateY(-120%) rotate(90deg);
    }
    .animation {
-      top: 70px;
-      left: 60px;
+      margin: -1rem;
    }
    .animation_2 {
-      top: 50px;
-      left: 80px;
+      margin: -1rem;
+
    }
 
 }
@@ -617,7 +623,7 @@ svg {
    }
 
 }
-@media only screen and (max-width: 449px) {
+/* @media only screen and (max-width: 449px) {
    .animation {
       top: 60px;
       left: 50px;
@@ -637,4 +643,4 @@ svg {
       top: 30px;
       left: 60px;
    }
-}
+} */
